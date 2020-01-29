@@ -30,7 +30,7 @@ function getTasks(){
     let tasksView = document.getElementById('tasks');
     
     tasksView.innerHTML = '';
-    
+if( tasks.length>0){
     for(let i = 0; i < tasks.length; i++){
         //console.log(tasks.length);
         let title = tasks[i].title;
@@ -47,6 +47,7 @@ function getTasks(){
         //console.log(tasks[i]);
 
     }
+}
 }
 
 function deleteTask(title){
